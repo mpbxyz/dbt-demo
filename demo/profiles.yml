@@ -1,0 +1,14 @@
+demo:
+  outputs:
+    dev:
+      dataset: dbt_demo
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /secrets/dbt-service-keyfile
+      location: EU
+      method: service-account
+      priority: interactive
+      project: 'core-361119'
+      threads: 2
+      type: bigquery
+  target: dev
